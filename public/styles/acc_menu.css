@@ -1,0 +1,85 @@
+﻿ul { list-style-type: none; }
+.accordion {
+  width: 100%;
+  /*max-width: 360px;*/
+  margin: 0px;
+  background: #FFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.accordion .link {
+  cursor: pointer;
+  display: block;
+  padding: 8.5px 15px 8.5px 35px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  border: 1px solid #464646;
+  border-top:0px;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+	background:#5B5B5B;
+}
+.accordion .link:hover {
+  
+    background-position:0 -64px;
+}
+
+.accordion li:last-child .link { border-bottom: 0; }
+
+.accordion li i {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 14px;
+}
+
+.accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+
+
+.submenu {
+  display: none;
+  background: #727272;
+  font-size: 14px;
+  
+}
+
+.submenu li { border-top: 1px solid #676767; }
+.submenu li i { font-size:13px;top:10px; }
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #E48945;
+  padding: 6px 15px 6px 35px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+ 
+.accordion li ul li .link1 {
+  position: relative;
+}

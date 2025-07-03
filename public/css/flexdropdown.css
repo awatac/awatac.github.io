@@ -1,0 +1,176 @@
+.flexdropdownmenu, .flexdropdownmenu ul{ /*topmost and sub ULs, respectively*/
+	padding-left: 0px;
+	position: absolute;
+	left: 0;
+	top: 18px;
+	list-style-type: none;
+	background: ;
+	border-bottom-width: 0;
+	visibility: hidden;
+	display: none; /*collapse all sub menus to begin with*/
+	box-shadow: 3px 3px 8px #818181; /*shadow for CSS3 capable browsers.*/
+	-webkit-box-shadow: 3px 3px 8px #818181;
+	-moz-box-shadow: 3px 3px 8px #818181;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-bottom-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #1767A0;
+	border-right-color: #1767A0;
+	border-bottom-color: #1767A0;
+	border-left-color: #1767A0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	
+}
+
+
+.flexdropdownmenu li{
+position: relative;
+}
+
+.flexdropdownmenu li a{
+	display: block;
+	width: 150px; /*width of menu (not including side paddings)*/
+	color: #FFFFFF;
+	font-weight: 500;
+	text-decoration: none;
+	background-color: #4CAA0E;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #428714;
+	line-height: 22px;
+	padding-top: 4px;
+	padding-right: 5px;
+	padding-bottom: 4px;
+	padding-left: 5px;
+}
+
+* html .flexdropdownmenu li{ /*IE6 CSS hack*/
+display: inline-block;
+width: 150px; /*width of menu (include side paddings of LI A*/
+}
+
+.flexdropdownmenu li a:hover{
+background: #0E4D88;
+color: #FFFFFF;
+font-weight: 500;
+}
+
+.rightarrowclass{
+position: absolute;
+top: 20px;
+right: 5px;
+}
+
+
+/*---------click_dropdown--------------*/
+.sap_tabs {
+	/*background-color: #2469B5;
+    background-position: 10px 50%;*/
+	
+	background-repeat: no-repeat;
+	cursor: pointer;
+	/*letter-spacing: 0.5px;
+	line-height: 16px;*/
+	padding: 0px;
+	z-index: 99999;
+	background-attachment: scroll;
+	background-image: url(../images/active.png);
+	background-position: 92% 12px;	/*border-bottom: 1px solid #e1e5e7;*/
+	background-size: 25px 25px;
+}
+.sap_tabs:hover {
+    
+}
+.sap_tabs.active {
+	color: #fff;
+	text-decoration: none;
+	background-attachment: scroll;
+	background-image: url(../images/inactive.png);
+	background-repeat: no-repeat;
+	background-position: 92% 12px;
+}
+.sap_container {
+    border: 0 solid #E5E5E5;
+    color: #494949;
+    margin: 5px 0;
+    padding: 0px;
+    text-align: justify;
+	
+}
+.sap_container h3, .sap_container h4 {
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 16px;
+    font-style: italic;
+}
+.column {
+    float: left;
+    padding: 2%;
+    width: 46%;
+}
+.subHead {
+    color: #982410;
+    font-family: "Times New Roman",Times,serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.menuhead {
+    border-radius: 1em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+.splcontent {
+    border-radius: 1em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    padding: 10px;
+}
+.menutitle {
+    border-bottom: thin dotted #EEEEEE;
+    color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding-left: 8px;
+}
+.menucontent {
+    color: #FFFFFF;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+.c_style{
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 21px;
+	color: #3b3b3b;
+}
+
+
+
+
+
+/*---------click_dropdown_end--------------*/
